@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet"   type="text/css"   href="main.css" >
+    <script   src="jquery-3.5.1.js"></script>
+</head> 
+
+
+<body  >
+     <!--<video  src="Introduction.mp4"    width="600"  height="600"  controls>
+     </video>--> 
+     
+
+     <video  src="Candelabra.mp3"    width="750"  height="150"  Autostart=true  Autoplay=true enablejavascript=true  controls>
+	     
+     </video> 
+
+
+
+
+    <div  id="test" > 
+      
+    </div> 
+    
+
+
+
+
+
+</body>
+	<script  language="javascript">
+             
+		 //$(document).ready(function(){
+			 //$("#test").html("hello");
+	                 //console.log($("#test"));
+                      //function play(){
+
+                        // document.getElementsByTagName("video")[0].autostart = true ;
+                         //document.getElementsByTagName("video")[0].autoplay  = true ;
+		      //}
+		// });
+          
+
+	</script>
+</html>

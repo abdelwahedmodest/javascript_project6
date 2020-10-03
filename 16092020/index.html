@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" size="50"  placeholder="enter your message"  id="txt" />
+    <input type="button"  value="SendData" onclick="sendData()"/>
+    <div id="d2"></div> 
+    <script>
+        io.connect("http://localhost:3000");
+   
+   
+        socketClient.on("sendingmsg", function(data){
+         
+
+          document.getElementById("d2").innerHTML =
+          "<b>server data</b>" + data ;
+
+});
+function  sendData(){
+    var data = document.getElementById("text").value;
+    socketClient.emit("message", data);
+}
+socketClient.on("mesageToAll", function(data){
+document.getElementById("d2").innerHTML = "<br/>" + data ;
+})
+    </script>
+    <script type="text/javascript" src="server.js" >
+    </script>
+    
+</body>
+</html>
+
+ 
+
+
+
+
+
+
+
+
